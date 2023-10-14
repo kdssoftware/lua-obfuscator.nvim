@@ -11,7 +11,7 @@ description = {
 - `LuaObfuscatorCurrent` : obfuscates the current buffer
 ]],
    homepage = "github.com/kdssoftware/lua-obfuscator.nvim",
-   license = "idc"
+   license = "MIT"
 }
 build = {
    type = "builtin",
