@@ -1,6 +1,5 @@
 local M = {}
 local json = require("lua-obfuscator.json")
-local utils = require("lua-obfuscator.utils")
 
 -- TODO port to utils 
 
@@ -65,11 +64,8 @@ M.newObfuscateRequest = function(sessionId)
         "-H 'Content-type: text/plain' -H 'apikey: test' -H 'sessionId: " ..
             sessionId .. "'"
 
-    local jsonData =
-        '{CustomPlugins:{ControlFlowFlattenAllBlocks:[75],SwizzleLookups:[100],EncryptStrings:[100],RevertAllIfStatements:[50]},MinifiyAll:true,Virtualize:false}'
-
     local command = string.format('curl -X POST %s -s %s --data-raw %q',
-                                  endpoint, headers, json.decode(settingsData))
+                                  endpoint, headers, json.encode(settingsData))
     local result = vim.fn.system(command)
 
     if vim.v.shell_error ~= 0 then
