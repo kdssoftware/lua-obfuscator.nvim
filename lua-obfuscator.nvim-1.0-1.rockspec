@@ -1,17 +1,17 @@
 package = "lua-obfuscator.nvim"
-version = "dev-1"
+version = "1.0-1"
 source = {
    url = "git+ssh://git@github.com/kdssoftware/lua-obfuscator.nvim.git"
 }
 description = {
-   summary = "## Commands- `LuaObfuscatorCurrent` : obfuscated ",
+   summary = "Lua obfuscator plugin for Neovim",
    detailed = [[
 
 ## Commands
-- `LuaObfuscatorCurrent` : obfuscated 
+- `LuaObfuscatorCurrent` : obfuscates the current buffer
 ]],
-   homepage = "*** please enter a project homepage ***",
-   license = "*** please specify a license ***"
+   homepage = "github.com/kdssoftware/lua-obfuscator.nvim",
+   license = "idc"
 }
 build = {
    type = "builtin",
