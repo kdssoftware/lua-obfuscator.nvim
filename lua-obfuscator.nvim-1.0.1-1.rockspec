@@ -1,7 +1,8 @@
 package = "lua-obfuscator.nvim"
-version = "1.0-1"
+version = "1.0.1-1"
 source = {
-   url = "git+ssh://git@github.com/kdssoftware/lua-obfuscator.nvim.git"
+   url = "git+ssh://git@github.com/kdssoftware/lua-obfuscator.nvim.git",
+   tag = "v1.0.1"
 }
 description = {
    summary = "Lua obfuscator plugin for Neovim",
